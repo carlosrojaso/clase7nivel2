@@ -1,0 +1,21 @@
+/*
+- Crear un arreglo que tenga noticias
+- Crear un boton: El titulo Debera ser un H1, la descipcion un P y la imagen un img
+- A travez del debera tener la posibilidad de eliminar del DOM la noticia por ID que desee
+
+getElementById()
+
+Pasos para crear un elemento
+
+1. Creación de un nodo de tipo Element.
+
+2. Creación de un nodo de tipo Text.
+
+3. Añadir el nodo Text como nodo hijo del nodo Element.
+
+4. Añadir el nodo Element a la página.
+
+REMOVER UN ELEMENTO
+
+node.removeChild(node)
+*/

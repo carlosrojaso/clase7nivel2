@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+First Name: <input name="fname" type="text" value="Michael"><br>
+First Name: <input name="fname" type="text" value="Doug">
+
+<p>Texto.</p>
+
+<button onclick="myFunction()">Intentar</button>
+<button onclick="myFunction2()">Eliminar</button>
+
+<div id="demo"></div>
+
+<script>
+function myFunction() {
+    var x = document.getElementsByName("fname")[0].tagName;
+    document.getElementById("demo").innerHTML = "Los datos no son correctos";
+
+		// Paso 1: Crear nodo de tipo Element
+		var parrafo = document.createElement("p");
+
+		// Paso 2: Crear nodo de tipo Text
+		var contenido = document.createTextNode("Hola Mundo!");
+
+		// Paso 3: Añadir el nodo Text como hijo del nodo Element
+		parrafo.appendChild(contenido);
+
+		// Paso 4: Añadir el nodo Element como hijo de la pagina
+		document.body.appendChild(parrafo);
+}
+
+function myFunction2(){
+	var parrafo = document.getElementById("demo");
+
+	parrafo.parentNode.removeChild(parrafo);
+
+}
+</script>
+
+</body>
+</html>
+
